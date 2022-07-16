@@ -1,0 +1,148 @@
+    Q1  #include <stdio.h>
+
+int main() {
+
+    printf("Hello students");
+    return 0;
+}
+                 OUTPUT-Hello students
+
+
+      Q2   #include <stdio.h>
+
+int main() {
+
+    printf("Hello\nStudents");
+    return 0;
+}
+
+                   OUTPUT-Hello
+                          Students
+ 
+
+
+         Q3   #include <stdio.h>
+
+int main() {
+
+    printf("\"MySirG\"");
+    return 0;
+}
+
+
+                   OUTPUT-"MySirG"
+
+          Q4 #include<stdio.h>
+ int main()
+  {
+  int r;
+  float a;
+  printf("enter radius of circle");
+  scanf("%d",&r);
+  a=3.14*r*r;
+  printf("area is %f",a);
+   return 0;
+  }
+              OUTPUT-enter radius of circle=5
+                      area is 78.0000
+
+
+
+           Q5 #include<stdio.h>
+ int main()
+  {
+      int x;
+      x=printf("abcde");
+      printf("length of\"abcde\"is %d",x);
+      return 0;
+  }
+
+              OUTPUT-length of abcde is 5
+      
+
+          Q6   #include <stdio.h>
+
+int main()
+ 
+{
+   printf("\"Hello,Amit Kumar\"");
+   return 0;
+}
+
+
+                  OUTPUT-"Hello,Amit Kumar"
+
+
+           Q7     #include <stdio.h>
+
+int main()
+ 
+{
+   printf("%%d");
+   return 0;
+}
+
+                    OUTPUT-%d
+    
+
+             Q8     #include <stdio.h>
+
+int main()
+ 
+{
+   printf("\\n");
+   return 0;
+}
+                     OUTPUT-\n
+
+    
+
+             Q9      #include <stdio.h>
+
+int main()
+ 
+{
+   printf("\\\\");
+   return 0;
+}
+
+                    OUTPUT-\\
+
+     
+             Q 10-#include<stdio.h>
+ int main()
+   {
+       int d,m,y;
+       printf("enter date in DD/MM/YYYY Format");
+       scanf("%d/%d/%d",&d,&m,&y);
+       printf("day- %d,month- %d,year- %d",d,m,y);
+       return 0;
+   }
+
+
+        OUTPUT-enter date in DD/MM/YYYY Format 14/07/2022
+                day-14,month-07,year-2022
+
+
+
+                Q11-#include<stdio.h>
+ int main()
+   {
+       int h,m;
+       printf("enter time in HH:MM Format");
+       scanf("%d/%d",&h,&m);
+       printf("%d hour and %d minutes",h,m);
+       return 0;
+   }
+
+
+       OUTPUT- enter time in HH:MM Format06:12
+                 06 hour and 12 minutes
+
+   
+
+
+              Q12 OUTPUT-ineuron7
+
+
+      
