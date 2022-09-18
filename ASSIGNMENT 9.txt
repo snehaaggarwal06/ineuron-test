@@ -1,0 +1,452 @@
+     ASSIGNMENT 9
+
+Q1-#include<stdio.h>
+int main()
+{
+    int x;
+    printf("\n1.january");
+    printf("\n2.february");
+    printf("\n3.march");
+    printf("\n4.april");
+    printf("\n5.may");
+    printf("\n6.june");
+    printf("\n7.july");
+    printf("\n8.august");
+    printf("\n9.september");
+    printf("\n10.october");
+    printf("\n11.november");
+    printf("\n12.december");
+    scanf("%d",&x);
+       switch(x)
+       {
+       case 1:
+        printf("31");
+        break;
+       case 2:
+        printf("28&&29");
+        break;
+       case 3:
+        printf("31");
+        break;
+       case 4:
+        printf("30");
+        break;
+        case 5:
+        printf("31");
+        break;
+        case 6:
+        printf("30");
+        break;
+        case 7:
+        printf("31");
+        break;
+        case 8:
+        printf("31");
+        break;
+        case 9:
+        printf("30");
+        break;
+        case 10:
+        printf("31");
+        break;
+        case 11:
+        printf("30");
+        break;
+        case 12:
+        printf("31");
+        break;
+
+       default:
+        printf("invalid");
+
+       }
+        return 0;
+
+}
+OUTPUT-
+1.january
+2.february
+3.march
+4.april
+5.may
+6.june
+7.july
+8.august
+9.september
+10.october
+11.november
+12.december
+8
+31
+
+
+Q2-#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int x,a,b;
+    while(1)
+    {
+    printf("\n1.addition");
+    printf("\n2.subtraction");
+    printf("\n3.multiplication");
+    printf("\n4.division");
+    printf("\n5.exit");
+    printf("\n\n enter your choice");
+
+    scanf("%d",&x);
+       switch(x)
+       {
+       case 1:
+           printf("enter two number");
+           scanf("%d%d",&a,&b);
+           printf("sum is %d",a+b);
+           break;
+       case 2:
+           printf("enter two number");
+           scanf("%d%d",&a,&b);
+           printf("diff is %d",a-b);
+           break;
+       case 3:
+           printf("enter two number");
+           scanf("%d%d",&a,&b);
+           printf("product is %d",a*b);
+           break;
+       case 4:
+           printf("enter two number");
+           scanf("%d%d",&a,&b);
+           printf("div is %d",a/b);
+           break;
+       case 5:
+          exit(0);
+           break;
+
+           default:
+        printf("invalid");
+
+       }
+    }
+        return 0;
+}
+OUTPUT-
+1.addition
+2.subtraction
+3.multiplication
+4.division
+5.exit
+
+ enter your choice3
+enter two number6
+5
+product is 30
+1.addition
+2.subtraction
+3.multiplication
+4.division
+5.exit
+
+ enter your choice5
+
+Q3-#include<stdio.h>
+
+int main()
+{
+    int x;
+   
+        printf("enter a number");
+        scanf("%d",&x);
+        switch(x)
+        {
+            
+        case 1:
+            printf("sunny monday");
+            break;
+        case 2:
+            printf("happy tuesday");
+            break;
+        case 3:
+            printf("hello wednesday");
+            break;
+        case 4:
+            printf("great thrusday");
+            break;
+        case 5:
+            printf("snoopy friday");
+            break;
+        case 6:
+            printf("good saturday");
+            break;
+        case 7:
+            printf("happiest sunday");
+            break; 
+        default:
+            printf("invalid");
+        }
+          return 0;
+}
+OUTPUT-
+enter a number7
+happiest sunday
+
+Q4-#include<stdio.h>
+
+int main()
+{
+    int x,a,b,c;
+
+    printf("\n1.check isosceles triangle");
+    printf("\n2.check right angle triangle");
+    printf("\n3.check equilateral traiangle");
+    printf("\n4.exit");
+    printf("\n\n enter your choice");
+
+    scanf("%d",&x);
+    printf("enter three sides of triangle");
+    scanf("%d%d%d",&a,&b,&c);
+       switch(x)
+       {
+       case 1:if(a==b||b==c||c==a)
+              printf("isosceles triangle");
+              else
+              printf("not isosceles");
+
+           break;
+       case 2:if(a*a==b*b+c*c||b*b==c*c+a*a||c*c==a*a+b*b)
+              printf("right triangle");
+              else
+              printf("not right triangle");
+
+           break;
+
+       case 3:if((a==b)&&(b==c))
+              printf("equilatoral triangle");
+              else
+              printf("not eqilatoral triangle");
+       case 4:
+              exit(0);
+       default:
+              printf("invalid");
+       }
+
+        return 0;
+}
+OUTPUT-
+1.check isosceles triangle
+2.check right angle triangle
+3.check equilateral traiangle
+4.exit
+
+ enter your choice1
+enter three sides of triangle4
+4
+5
+isosceles triangle
+
+Q5-
+#include<stdio.h>
+
+int main()
+{
+    int x;
+
+
+    printf("enter a number");
+
+    scanf("%d",&x);
+       switch(x)
+       {
+       case 1:
+           printf("good");
+           break;
+       case 2:
+           printf("better");
+           break;
+       case 3:
+           printf("best");
+           break;
+       default:
+        printf("invalid");
+
+       }
+        return 0;
+}
+OUTPUT-
+enter a number3
+best
+
+Q6-
+#include<stdio.h>
+
+int main()
+{
+    int y;
+
+
+    printf("enter a year");
+
+    scanf("%d",&y);
+       switch(y%100==0)
+       {
+       case 1:switch(y%400==0)
+           {
+       case 1:
+        printf("leap year");
+        break;
+
+       case 0:
+        printf("not a leap year");
+        break;
+
+        break;
+           }
+           case 0:switch(y%4==0)
+           {
+       case 1:
+        printf("leap year");
+        break;
+       case 0:
+        printf("not a leap year");
+        break;
+
+           }
+       }
+
+        return 0;
+}
+OUTPUT-enter year2000
+leap year
+
+
+Q7-#include<stdio.h>
+int main(){
+	int n;
+	float per;
+	printf("Enter a electricity unit:\n");
+	scanf("%d",&n);
+	switch(n)
+	{
+		case 1 ... 50:
+		    n=n*0.50;
+			printf("The electricity bill is Rs %d/unit\n",n);
+			break;
+		case 51 ... 150:
+		    n=n*0.75;
+			printf("The electricity bill is Rs %d/unit\n",n);
+			break;
+		case 151 ... 250:
+		    n=n*1.20;
+			printf("The electricity bill is Rs %d/unit\n",n);
+			break;
+		case 251 ... 1000:
+		    n=n*1.50;
+			printf("The electricity bill is Rs %d/unit\n",n);
+			break;
+		}
+		per=n+n*0.20;
+		printf("An additional surcharge of 20%% is %.2f Rs",per);
+		return 0;
+}
+
+OUTPUT-Enter a electricity unit:
+30
+The electricity bill is Rs 15/unit
+An additional surcharge of 20% is 18.00 Rs
+
+
+
+Q8-
+int main()
+{
+    int x;
+
+
+    printf("enter a number");
+
+    scanf("%d",&x);
+       switch(x>0)
+       {
+       case 1:
+           printf("%d",-x);
+           break;
+       case 0:
+        printf("%d",-x);
+        break;
+       }
+
+        return 0;
+}
+OUTPUT-enter number-8
+8
+
+Q9-
+#include<stdio.h>
+
+int main()
+{
+    int x;
+
+
+    printf("enter a number");
+
+    scanf("%d",&x);
+       switch(x%2==0)
+       {
+       case 1:
+           printf("%d",x+1);
+           break;
+       case 0:
+        printf("%d",x);
+        break;
+       }
+
+        return 0;
+}
+OUTPUT-enter a number6
+       7
+
+Q10-
+#include<stdio.h>
+
+int main()
+{
+    int a,b,c,d,x,y;
+
+
+    printf("enter  number");
+
+    scanf("%d%d%d",&a,&b,&c);
+    d=b*b-4*a*c;
+       switch(d<0)
+       {
+   case 1:
+           printf("both roots are imaginary");
+           break;
+       case 0:switch(d==0)
+       {
+       case 1:
+            printf("both roots are equal");
+            x=-b/(2*a);
+         printf("root is %d",x);
+        break;
+       case 0:
+           printf("real and distinct");
+           x=(-b+sqrt(d))/(2*a);
+           y=(-b-sqrt(d))/(2*a);
+           printf("root is %d,%d",x,y);
+           break;
+
+       }
+       }
+
+        return 0;
+}
+OUTPUT-enter  number8
+9
+-5
+real and distinct root is 0,-1
+
+
+
+       
+
+
