@@ -1,0 +1,169 @@
+           ASSIGNMENT-6
+
+          Q1-#include<stdio.h>
+int main()
+{
+    int i,n,s=0;
+    printf("enter number");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+        s=s+i;
+    printf("%d",s);
+    return 0;
+}
+              OUTPUT-enter number2
+                          3
+
+              Q2-#include<stdio.h>
+int main()
+{
+    int i,n,s=0;
+    printf("enter number");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+        if(i%2==0)
+            s=s+i;
+    printf("%d",s);
+    return 0;
+}
+            OUTPUT-enter number5
+                    6
+
+            Q3-#include<stdio.h>
+int main()
+{
+    int i,n,s=0;
+    printf("enter number");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+        if(i%2)
+            s=s+i;
+    printf("%d",s);
+    return 0;
+}
+          OUTPUT-enter number5
+                 9
+
+            Q4-#include<stdio.h>
+int main()
+{
+    int i,n,s=0;
+    printf("enter number");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+
+            s=s+i*i;
+    printf("%d",s);
+    return 0;
+}   
+            OUTPUT-enter number2
+                    5
+
+            Q5-#include<stdio.h>
+int main()
+{
+    int i,n,s=0;
+    printf("enter number");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+
+            s=s+i*i*i;
+    printf("%d",s);
+    return 0;
+}
+
+              OUTPUT-enter number2
+                      9
+     
+             Q6-#include<stdio.h>
+int main()
+{
+    int i,n,f=1;
+    printf("enter number");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+      f=f*i;
+
+    printf("%d",f);
+    return 0;
+}
+
+          OUTPUT- enter number4
+                      24
+  
+             Q7-#include<stdio.h>
+int main()
+{
+    int n,c=0;
+    printf("enter number");
+    scanf("%d",&n);
+    while(n!=0)
+    {
+        n=n/10;
+        c++;
+    }
+
+    printf("%d",c);
+    return 0;
+}
+
+          OUTPUT-enter number5647
+                     4
+
+              Q8-#include<stdio.h>
+int main()
+{
+    int x,i;
+    printf("enter number");
+    scanf("%d",&x);
+    for(i=2;i<=x-1;i++)
+        if(x%i==0)
+        break;
+     if(i==x)
+        printf("no.is prime");
+    else
+        printf("no.is not prime");
+    return 0;
+}
+
+           output-enter number8
+                  no.is not prime
+
+            Q9-#include<stdio.h>
+int main()
+{
+    int x,y,l;
+    printf("enter two numbers");
+    scanf("%d%d",&x,&y);
+    for(l=1;l<=x*y;l++)
+        if(l%x==0&&l%y==0)
+        break;
+
+        printf("%d",l);
+
+    return 0;
+}
+
+         OUTPUT-enter two numbers2
+                                 3
+                                 6
+    
+                  Q10-#include<stdio.h>
+int main()
+{
+    int x,y=0,r;
+    printf("enter numbers");
+    scanf("%d",&x);
+    while(x!=0){
+    r=x%10;
+    y=y*10+r;
+    x=x/10;
+    }
+    printf("%d",y);
+
+    return 0;
+}
+
+
+         OUTPUT-enter number657
+                            756
