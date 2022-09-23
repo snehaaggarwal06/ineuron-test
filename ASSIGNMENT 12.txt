@@ -1,0 +1,242 @@
+       ASSIGNMENT 12
+
+Q1-#include<stdio.h>
+void printN(int);
+int main()
+{
+    int n;
+    printN(10);
+    printf("\n");
+    return 0;
+}
+void printN(int n)
+{
+
+
+     if(n>0)
+ {
+     printN(n-1);
+     printf("%d",n);
+
+ }
+ }
+OUTPUT-
+12345678910
+
+Q2-
+#include<stdio.h>
+void printN(int);
+int main()
+{
+    int n;
+    printN(5);
+    printf("\n");
+    return 0;
+}
+void printN(int n)
+{
+
+
+     if(n>=1)
+ {
+     printf("%d",n);
+     printN(n-1);
+
+ }
+ }
+OUTPUT-
+54321
+
+Q3-
+#include<stdio.h>
+void printN(int);
+int main()
+{
+    int n;
+    printN(6);
+    printf("\n");
+    return 0;
+}
+void printN(int n)
+{
+
+
+     if(n>=1)
+ {
+
+     printN(n-1);
+     printf("%d",n*2-1);
+
+ }
+ }
+OUTPUT-
+1357911
+
+Q4-
+#include<stdio.h>
+void printN(int);
+int main()
+{
+    int n;
+    printN(6);
+    printf("\n");
+    return 0;
+}
+void printN(int n)
+{
+
+
+     if(n>=1)
+ {
+     printf("%d",n*2-1);
+
+     printN(n-1);
+
+ }
+ }
+OUTPUT=
+1197531
+
+Q5-
+#include<stdio.h>
+void printN(int);
+int main()
+{
+    int n;
+    printN(4);
+    printf("\n");
+    return 0;
+}
+void printN(int n)
+{
+
+
+     if(n>0)
+ {
+     printN(n-1);
+      printf("%d",n*2);
+
+ }
+ }
+OUTPUT=
+2468
+
+Q6
+#include<stdio.h>
+void printN(int);
+int main()
+{
+    int n;
+    printN(4);
+    printf("\n");
+    return 0;
+}
+void printN(int n)
+{
+
+
+     if(n>0)
+ {
+      printf("%d",n*2);
+      printN(n-1);
+
+ }
+ }
+
+OUTPUT=
+8642
+
+Q7-
+#include<stdio.h>
+void printN(int);
+int main()
+{
+    int n;
+    printN(4);
+    printf("\n");
+    return 0;
+}
+void printN(int n)
+{
+
+
+     if(n>=1)
+ {
+     printN(n-1);
+      printf("%d",n*n);
+
+ }
+ }
+OUTPUT=
+14916
+
+Q8-
+#include<stdio.h>
+void printN(int);
+int main()
+{
+    int n;
+    printN(50);
+    printf("\n");
+    return 0;
+}
+void printN(int n)
+{
+     if(n==1)
+        printf("1");
+     else
+ {
+      printN(n/2);
+      printf("%d",n%2);
+ }
+ }
+OUTPUT=
+110010
+
+Q9=
+#include<stdio.h>
+void printN(int);
+int main()
+{
+    int n;
+    printN(25);
+    printf("\n");
+    return 0;
+}
+void printN(int n)
+{
+     if(n>0)
+
+
+ {
+      printN(n/8);
+      printf("%d",n%8);
+ }
+ }
+
+OUTPUT=
+31
+
+Q10=
+#include<stdio.h>
+void printN(int);
+int main()
+{
+    int n;
+    printN(640);
+    printf("\n");
+    return 0;
+}
+void printN(int n)
+{
+     if(n>=1)
+
+
+ {
+     printf("%d",n%10);
+      printN(n/10);
+ }
+ }
+
+output=
+046
